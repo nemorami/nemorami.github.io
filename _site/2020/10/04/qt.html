@@ -1,0 +1,11 @@
+<h1 id="for-unix-socket">for unix socket</h1>
+<p>nc -lkU ~/.assistantfifo | assistant -enableRemoteControl</p>
+<h1 id="tcp-socket">tcp socket</h1>
+<p>nc -lp 8080| assistant -enableRemoteControl</p>
+
+<p>Then, you can do</p>
+
+<h1 id="for-unix-socket-1">for unix socket</h1>
+<p>echo “activateKeyword QObject” | nc -U ~/.assistantfifo</p>
+<h1 id="for-tcp-socket">for tcp socket</h1>
+<p>echo “activateKeyword QList” | nc localhost 8080</p>
