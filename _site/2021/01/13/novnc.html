@@ -1,0 +1,42 @@
+<h2 id="vnc-설정">vnc 설정</h2>
+<p>/etc/systemd/system/xvnc.socket</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
+Description=XVNC Server
+
+[Socket]
+ListenStream=5900
+Accept=yes
+
+[Install]
+WantedBy=sockets.target
+</code></pre></div></div>
+
+<p>/etc/systemd/system/xvnc@.service</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
+Description=XVNC Per-Connection Daemon
+
+[Service]
+ExecStart=-/usr/bin/Xvnc -inetd -localhost -query localhost -geometry 1920x1080 -once -SecurityTypes=None
+User=nobody
+StandardInput=socket
+StandardError=syslog
+</code></pre></div></div>
+<h2 id="light-dm설정">light dm설정</h2>
+<p>LightDM</p>
+
+<p>Modify /etc/lightdm/lightdm.conf</p>
+
+<p>Enable the XDMCP Server:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[XDMCPServer]
+enabled=true
+port=177
+</code></pre></div></div>
+<p>On a headless system, disable the automatic start of one seat so that LightDM can run in the background:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[LightDM]
+start-default-seat=false
+</code></pre></div></div>
+<p>Then restart the LightDM:</p>
+
+<p>systemctl restart lightdm</p>
