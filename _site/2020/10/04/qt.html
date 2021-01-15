@@ -9,3 +9,8 @@
 <p>echo “activateKeyword QObject” | nc -U ~/.assistantfifo</p>
 <h1 id="for-tcp-socket">for tcp socket</h1>
 <p>echo “activateKeyword QList” | nc localhost 8080</p>
+
+<h1 id="qtcreator에서-qdebug-출력이-안될때">qtcreator에서 qDebug() 출력이 안될때</h1>
+<p>Qt creator &gt; Tools &gt; Options &gt; Kits, select your kit, find Environment, click change and add:</p>
+
+<p><code class="language-plaintext highlighter-rouge">QT_ASSUME_STDERR_HAS_CONSOLE=1</code></p>
