@@ -1,53 +1,8 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-13T15:10:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">NOVNC</title><link href="http://localhost:4000/2021/01/13/novnc.html" rel="alternate" type="text/html" title="NOVNC" /><published>2021-01-13T00:00:00+09:00</published><updated>2021-01-13T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/13/novnc</id><content type="html" xml:base="http://localhost:4000/2021/01/13/novnc.html">&lt;h2 id=&quot;vnc-설정&quot;&gt;vnc 설정&lt;/h2&gt;
-&lt;p&gt;/etc/systemd/system/xvnc.socket&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Unit]
-Description=XVNC Server
-
-[Socket]
-ListenStream=5900
-Accept=yes
-
-[Install]
-WantedBy=sockets.target
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;/etc/systemd/system/xvnc@.service&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Unit]
-Description=XVNC Per-Connection Daemon
-
-[Service]
-ExecStart=-/usr/bin/Xvnc -inetd -localhost -query localhost -geometry 1920x1080 -once -SecurityTypes=None
-User=nobody
-StandardInput=socket
-StandardError=syslog
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;light-dm설정&quot;&gt;light dm설정&lt;/h2&gt;
-&lt;p&gt;LightDM&lt;/p&gt;
-
-&lt;p&gt;Modify /etc/lightdm/lightdm.conf&lt;/p&gt;
-
-&lt;p&gt;Enable the XDMCP Server:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[XDMCPServer]
-enabled=true
-port=177
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;On a headless system, disable the automatic start of one seat so that LightDM can run in the background:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[LightDM]
-start-default-seat=false
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Then restart the LightDM:&lt;/p&gt;
-
-&lt;p&gt;systemctl restart lightdm&lt;/p&gt;</content><author><name></name></author><summary type="html">vnc 설정 /etc/systemd/system/xvnc.socket</summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/2020/11/10/docker.html" rel="alternate" type="text/html" title="Docker" /><published>2020-11-10T00:00:00+09:00</published><updated>2020-11-10T00:00:00+09:00</updated><id>http://localhost:4000/2020/11/10/docker</id><content type="html" xml:base="http://localhost:4000/2020/11/10/docker.html">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd</summary></entry><entry><title type="html">LINUX TIP</title><link href="http://localhost:4000/2020/10/07/linux-tip.html" rel="alternate" type="text/html" title="LINUX TIP" /><published>2020-10-07T00:00:00+09:00</published><updated>2020-10-07T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/07/linux-tip</id><content type="html" xml:base="http://localhost:4000/2020/10/07/linux-tip.html">&lt;h1 id=&quot;wine-hwp-file-open&quot;&gt;wine hwp file open&lt;/h1&gt;
-=======
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-15T13:06:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">VSCODE</title><link href="http://localhost:4000/2021/01/15/vscode.html" rel="alternate" type="text/html" title="VSCODE" /><published>2021-01-15T00:00:00+09:00</published><updated>2021-01-15T00:00:00+09:00</updated><id>http://localhost:4000/2021/01/15/vscode</id><content type="html" xml:base="http://localhost:4000/2021/01/15/vscode.html">&lt;h3 id=&quot;troubleshooting&quot;&gt;troubleshooting&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;다음 메시지와 함께 로그인 실패시 The name org.freedesktop.secrets was not provided by any .service files 
  =&amp;gt; pacman -S gnome-keyring libsecret&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">troubleshooting 다음 메시지와 함께 로그인 실패시 The name org.freedesktop.secrets was not provided by any .service files =&amp;gt; pacman -S gnome-keyring libsecret</summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/2020/11/10/docker.html" rel="alternate" type="text/html" title="Docker" /><published>2020-11-10T00:00:00+09:00</published><updated>2020-11-10T00:00:00+09:00</updated><id>http://localhost:4000/2020/11/10/docker</id><content type="html" xml:base="http://localhost:4000/2020/11/10/docker.html">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd</summary></entry><entry><title type="html">LINUX TIP</title><link href="http://localhost:4000/2020/10/07/linux-tip.html" rel="alternate" type="text/html" title="LINUX TIP" /><published>2020-10-07T00:00:00+09:00</published><updated>2020-10-07T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/07/linux-tip</id><content type="html" xml:base="http://localhost:4000/2020/10/07/linux-tip.html">&lt;h1 id=&quot;wine-hwp-file-open&quot;&gt;wine hwp file open&lt;/h1&gt;
->>>>>>> 4b13417885ba54ad5b6bd96d53c354ed8935e7de
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Desktop Entry]
 Name=한컴오피스 한글 2014
 Exec=env WINEPREFIX=&quot;/home/nemorami/.wine32&quot; wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f
