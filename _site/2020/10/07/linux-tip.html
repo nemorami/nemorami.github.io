@@ -1,0 +1,41 @@
+<h1 id="wine-hwp-file-open">wine hwp file open</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
+Name=한컴오피스 한글 2014
+Exec=env WINEPREFIX="/home/nemorami/.wine32" wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f
+Type=Application
+StartupNotify=true
+Comment=한글 2014(으)로 빠르고 편리하게 워드프로세서 문서를 만듭니다.
+Path=/home/nemorami/.wine32/dosdevices/c:/Program Files/Hnc/HOffice9/Bin/
+Icon=BE08_Hwp.0
+StartupWMClass=hwp.exe
+</code></pre></div></div>
+<h1 id="linux용-한글-2020">linux용 한글 2020</h1>
+<ul>
+  <li>dpkg -i –force-all han….</li>
+  <li>입력기가 붙지 않을때: /opt/hnc/hoffice11/Bin/qt 디렉토리 삭제</li>
+  <li>color-scheme 적용: /usr/share/color-schemes/ 아래 원하는 칼라 스키마 파일을 ~/.config/hwprc 파일로 복사</li>
+  <li>style적용: /usr/share/applications/hoffice11-hwp.desktop 편집
+Exec=/opt/hnchoffice11/Bin/hwp <strong>-style=Fusion</strong> %f</li>
+</ul>
+
+<h1 id="현재-os를-docker-image로-만들기">현재 OS를 docker image로 만들기</h1>
+<ol>
+  <li>현재 OS를 tar 파일로 묶음</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">tar --numeric-owner --exclude=/proc --exclude=/sys -cvf centos6-base.tar(이름 지정) / </code></p>
+
+<p><code class="language-plaintext highlighter-rouge"> tar -cpzf backup.tar.gz --exclude=/backup.tar.gz --exclude=/proc --exclude=/tmp --exclude=/mnt --exclude=/dev --exclude=/sys /</code></p>
+<ol>
+  <li>docker 서버로 tar 파일을 복사 후 docker에 import</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">cat centos6-base.tar | docker import - centos6-base(원하는 이미지 이름)</code></p>
+
+<ol>
+  <li>import 정상 확인</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">docker run -i -t centos6-base cat /etc/redhat-release </code>
+ <code class="language-plaintext highlighter-rouge">$ cat backup.tar.gz | docker import - imageName:20190825</code>
+<code class="language-plaintext highlighter-rouge">$ docker run -t -i imageName:20190825 /bin/bash</code></p>
