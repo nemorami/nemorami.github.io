@@ -19,20 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1c8cee-7a79-40f8-bb68-0d7c3a3649d4" name="Default Changelist" comment="...">
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/f8/4c690357e1280ed58c10d943352966a20594123f70b01c19849c11e7d2c17c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-10-04-qt.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-10-04-qt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/2020/10/04/qt.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/2020/10/04/qt.html" afterDir="false" />
+    <list default="true" id="8b1c8cee-7a79-40f8-bb68-0d7c3a3649d4" name="Default Changelist" comment="vscode">
+      <change afterPath="$PROJECT_DIR$/_posts/2022-04-29-intellij.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/2022/04/29/intellij.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,23 +39,25 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="imjyren6" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1hx0P3NQKqwoZ3oPkjEyqw7LUPM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rust/hello_world" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/nemorami/devel/github/nemorami.github.io",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
@@ -80,6 +81,9 @@
       <workItem from="1602047151268" duration="2274000" />
       <workItem from="1605013199970" duration="306000" />
       <workItem from="1605838682123" duration="241000" />
+      <workItem from="1649031349537" duration="1680000" />
+      <workItem from="1649413871327" duration="139000" />
+      <workItem from="1651222316866" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="_config.yml에 url추가">
       <created>1600941221038</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602048781236</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="vscode">
+      <created>1649032580124</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649032580124</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,55 +157,13 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="_config.yml에 url추가" />
     <MESSAGE value="config 설정" />
     <MESSAGE value="post linux tip" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="424" y="207" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600953757984">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="424" y="207" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1600953757984" />
-    <state x="755" y="441" width="451" height="480" key="#com.intellij.tools.ToolEditorDialog" timestamp="1601366925947">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="755" y="441" width="451" height="480" key="#com.intellij.tools.ToolEditorDialog/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1601366925947" />
-    <state x="192" y="103" key="DiffContextDialog" timestamp="1602047795919">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="192" y="103" key="DiffContextDialog/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1602047795919" />
-    <state x="743" y="273" width="424" height="550" key="FileChooserDialogImpl" timestamp="1601971234263">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="743" y="273" width="424" height="550" key="FileChooserDialogImpl/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1601971234263" />
-    <state x="192" y="103" key="MergeDialog" timestamp="1602048212746">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="192" y="103" key="MergeDialog/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1602048212746" />
-    <state x="604" y="316" key="MultipleFileMergeDialog" timestamp="1602048212754">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="604" y="316" key="MultipleFileMergeDialog/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1602048212754" />
-    <state x="646" y="357" key="NewModule_or_Project.wizard" timestamp="1600940561333">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="646" y="357" key="NewModule_or_Project.wizard/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1600940561333" />
-    <state x="469" y="184" width="1024" height="844" key="SettingsEditor" timestamp="1601366928473">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="469" y="184" width="1024" height="844" key="SettingsEditor/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1601366928473" />
-    <state x="747" y="271" key="VCS.ChangeListViewerDialog" timestamp="1602047905580">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="747" y="271" key="VCS.ChangeListViewerDialog/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1602047905580" />
-    <state x="555" y="285" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1602048788773">
-      <screen x="0" y="20" width="1920" height="1060" />
-    </state>
-    <state x="555" y="285" width="800" height="527" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.20.1920.1060@0.20.1920.1060" timestamp="1602048788773" />
+    <MESSAGE value="vscode" />
+    <option name="LAST_COMMIT_MESSAGE" value="vscode" />
   </component>
 </project>
