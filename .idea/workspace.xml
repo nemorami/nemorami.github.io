@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1c8cee-7a79-40f8-bb68-0d7c3a3649d4" name="Default Changelist" comment="vscode">
-      <change afterPath="$PROJECT_DIR$/_posts/2022-04-29-intellij.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/2022/04/29/intellij.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="8b1c8cee-7a79-40f8-bb68-0d7c3a3649d4" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/nemorami/devel/github/nemorami.github.io",
+    "last_opened_file_path": "/home/nemorami/devel/IdeaProjects/spring/SpringInAction",
     "nodejs_package_manager_path": "npm",
     "ruby.rails.projectView.checked": "true"
   }
@@ -83,7 +75,7 @@
       <workItem from="1605838682123" duration="241000" />
       <workItem from="1649031349537" duration="1680000" />
       <workItem from="1649413871327" duration="139000" />
-      <workItem from="1651222316866" duration="346000" />
+      <workItem from="1651222316866" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="_config.yml에 url추가">
       <created>1600941221038</created>
@@ -141,7 +133,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649032580124</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="intellij">
+      <created>1651222693561</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651222693561</updated>
+    </task>
+    <task id="LOCAL-00010" summary="intellij">
+      <created>1651222859693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651222859693</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml">
+      <created>1651222928341</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651222928341</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +177,8 @@
     <MESSAGE value="post linux tip" />
     <MESSAGE value="..." />
     <MESSAGE value="vscode" />
-    <option name="LAST_COMMIT_MESSAGE" value="vscode" />
+    <MESSAGE value="intellij" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml" />
   </component>
 </project>
