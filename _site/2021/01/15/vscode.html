@@ -1,5 +1,12 @@
 <h3 id="troubleshooting">troubleshooting</h3>
 <ul>
-  <li>다음 메시지와 함께 로그인 실패시 The name org.freedesktop.secrets was not provided by any .service files 
- =&gt; pacman -S gnome-keyring libsecret</li>
+  <li>
+    <p>다음 메시지와 함께 로그인 실패시 The name org.freedesktop.secrets was not provided by any .service files 
+ =&gt; pacman -S gnome-keyring libsecret</p>
+  </li>
+  <li>
+    <p>jupyter kernel error.</p>
+  </li>
 </ul>
+
+<p>You can solve that problem by inserting”enable-proposed-api”: [“ms-toolsai.jupyter”] in the start settings of vs code. So press CTRL+ALT+P -&gt; “Preference: Configure Runtime Arguments” then insert the upper line. After that restart vscode.</p>
