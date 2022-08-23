@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-29T18:03:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Intellij</title><link href="http://localhost:4000/2022/04/29/intellij.html" rel="alternate" type="text/html" title="Intellij" /><published>2022-04-29T00:00:00+09:00</published><updated>2022-04-29T00:00:00+09:00</updated><id>http://localhost:4000/2022/04/29/intellij</id><content type="html" xml:base="http://localhost:4000/2022/04/29/intellij.html"><![CDATA[<p>DevTools는 코드가 변경될 때 자동으로 애플리케이션을 다시 시작시킨다. 즉, 소스를 변경할때 마다 프로젝트를 중지시키고 다시 시작 시킬 필요가 없다는 뜻이다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-22T12:19:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">윈도우 c:\Users d 드라이브로 옮기기</title><link href="http://localhost:4000/2022/08/22/c-users-d.html" rel="alternate" type="text/html" title="윈도우 c:\Users d 드라이브로 옮기기" /><published>2022-08-22T00:00:00+09:00</published><updated>2022-08-22T00:00:00+09:00</updated><id>http://localhost:4000/2022/08/22/c-users-d</id><content type="html" xml:base="http://localhost:4000/2022/08/22/c-users-d.html"><![CDATA[<ol>
+  <li>
+    <p>윈도우 복구모드윈도우 시작메뉴 &gt; 설정 &gt; 업데이트 및 복구 &gt; 복구 &gt; 고급 시작 옵션 &gt; 다시 시작캡쳐 이미지 자세히 보기(참고용)</p>
+  </li>
+  <li>
+    <p>명령 프롬프트 모드옵션 선택 &gt; 문제 해결 &gt; 고급 옵션 &gt; 명령 프롬프트 캡처 자료 자세히 보기 (참고용)</p>
+  </li>
+  <li>
+    <p>C:\Users 와 D:\Users 의 접근 드라이브 명 확인(주의!!!)
+복구모드에서는 평범하게 사용하던 C,D 드라이브 명이 다른 이름으로 바뀌어 표시될 수 있으므로 꼭 확인해서 메모해 두어야 합니다.</p>
+  </li>
+  <li>
+    <p>Users 디렉토리 이동시키기
+제일 중요한 단계입니다. 실수하면 로그인이 되지 않거나, 여러가지 문제로 윈도우를 다시 설치해야 할지도 모릅니다.
+1) 3번 단계에서 확인한 드라이브 명을 정확하게 사용해야 합니다.
+2) robocopy 명령어 옵션을 정확히 사용하세요.(/copyall : 모든 파일정보를 복사합니다. /E: 비어있는 디렉토리를 포함하여 하위디렉토리를 복사합니다. /PURGE : 원본에 없는 파일/디렉토리는 제외합니다. /xj : 연결지점을 제외합니다.)  
+X:&gt; D:
+D:&gt; robocopy /copyall /E /PURGE /xj Users E:\Users
+※※ 3번 단계에서 실제 C / D 드라이브의 표시 이름을 확인 후 사용하세요. (실제 C:\ &gt; 표시 D:\ , 실제 D:\ &gt; 표시 E:\ )</p>
+  </li>
+</ol>
+
+<p>4-1.기존 Users 디렉토리 삭제
+4번 단계에서 에러가 발생하지 않았으면, 기존 Users 디렉토리를 삭제합니다.D:&gt; rmdir /S /Q Users</p>
+
+<p>4-2. [임시방편] Users 디렉토리 삭제 실패시 디렉토리 이름을 변경한다.«자세히 보기»  삭제 성공시 필요없는 단계입니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>접기
+기존 Users 디렉토리를 삭제하지 못하면 다음 단계로 진행할 수 없고, 심각한 상황을 맞이 할 수 있습니다.폴더 삭제는 추후에 처리하시면 됩니다.  D:&gt; rename Users Users-delete※※  Users  &gt;&gt;  Users-delete  로 변경함.※※ 3번 단계에서 실제 C 드라이브의 드라이브명을 확인 후 사용하세요. (실제 C:\ &gt; 표시 D:\)경험자 링크 (Daum 로그인 필요함) : 
+</code></pre></div></div>
+
+<p>5.Users 디렉토리 교차점 만들기
+일종의 웜홀(Warm Hole)입니다. 여기 명령어에서는 실제 드라이브 명 (D:)을 사용합니다. D:&gt; mklink /J Users D:\Users
+※※ 앞의 D:는 실제로는 C 드라이브이며 뒷쪽의 D:는 실제 D 드라이브입니다.
+(</p>
+
+<ol>
+  <li>재부팅 후 컴퓨터 상태 확인하기D:&gt;exit </li>
+  <li>재부팅 후 컴퓨터 환경 확인C:\Users 폴더와 D:\Users 폴더내 내용이 동일하게 보이는 것을 확인할 수 있습니다. ※※ 개인적으로 C:\Users 링크는 숨김 처리하고, C:\사용자 한글폴더를 생성 후 이 폴더 안에 D:\사용자 폴더(실제 : D:\Users) 바로가기를 만들어서 사용합니다.</li>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[윈도우 복구모드윈도우 시작메뉴 &gt; 설정 &gt; 업데이트 및 복구 &gt; 복구 &gt; 고급 시작 옵션 &gt; 다시 시작캡쳐 이미지 자세히 보기(참고용)]]></summary></entry><entry><title type="html">pgadmin docker</title><link href="http://localhost:4000/2022/08/16/pgadmin-docker.html" rel="alternate" type="text/html" title="pgadmin docker" /><published>2022-08-16T00:00:00+09:00</published><updated>2022-08-16T00:00:00+09:00</updated><id>http://localhost:4000/2022/08/16/pgadmin-docker</id><content type="html" xml:base="http://localhost:4000/2022/08/16/pgadmin-docker.html"><![CDATA[<p>sudo docker run –name pgadmin -p 5050:80 -v /var/lib/pgadmin:/var/lib/pgadmin  -e ‘PGADMIN_DEFAULT_EMAIL=nemorami@daum.net’ -e ‘PGADMIN_DEFAULT_PASSWORD=j5nfants’ -d dpage/pgadmin4</p>]]></content><author><name></name></author><summary type="html"><![CDATA[sudo docker run –name pgadmin -p 5050:80 -v /var/lib/pgadmin:/var/lib/pgadmin -e ‘PGADMIN_DEFAULT_EMAIL=nemorami@daum.net’ -e ‘PGADMIN_DEFAULT_PASSWORD=j5nfants’ -d dpage/pgadmin4]]></summary></entry><entry><title type="html">Intellij</title><link href="http://localhost:4000/2022/04/29/intellij.html" rel="alternate" type="text/html" title="Intellij" /><published>2022-04-29T00:00:00+09:00</published><updated>2022-04-29T00:00:00+09:00</updated><id>http://localhost:4000/2022/04/29/intellij</id><content type="html" xml:base="http://localhost:4000/2022/04/29/intellij.html"><![CDATA[<p>DevTools는 코드가 변경될 때 자동으로 애플리케이션을 다시 시작시킨다. 즉, 소스를 변경할때 마다 프로젝트를 중지시키고 다시 시작 시킬 필요가 없다는 뜻이다.</p>
 
 <p>인텔리제이(IntelliJ) 에서 사용방법</p>
 
@@ -128,20 +167,4 @@ Exec=/opt/hnchoffice11/Bin/hwp <strong>-style=Fusion</strong> %f</li>
 <p>Qt creator &gt; Tools &gt; Options &gt; Kits, select your kit, find Environment, click change and add:</p>
 
 <p><code class="language-plaintext highlighter-rouge">QT_ASSUME_STDERR_HAS_CONSOLE=1</code></p>]]></content><author><name></name></author><summary type="html"><![CDATA[for unix socket nc -lkU ~/.assistantfifo | assistant -enableRemoteControl tcp socket nc -lp 8080| assistant -enableRemoteControl]]></summary></entry><entry><title type="html">Jenkins</title><link href="http://localhost:4000/2020/09/25/jenkins.html" rel="alternate" type="text/html" title="Jenkins" /><published>2020-09-25T00:00:00+09:00</published><updated>2020-09-25T00:00:00+09:00</updated><id>http://localhost:4000/2020/09/25/jenkins</id><content type="html" xml:base="http://localhost:4000/2020/09/25/jenkins.html"><![CDATA[<p>HTTP ERROR 403 No valid crumb was included in the request 에러 해결
-Dashboard&gt;Jenkins관리&gt;보안설정&gt;jenkins global security settings &gt; CSRF Protection &gt; Enable proxy compatibility 체크</p>]]></content><author><name></name></author><summary type="html"><![CDATA[HTTP ERROR 403 No valid crumb was included in the request 에러 해결 Dashboard&gt;Jenkins관리&gt;보안설정&gt;jenkins global security settings &gt; CSRF Protection &gt; Enable proxy compatibility 체크]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/09/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-09-24T18:07:23+09:00</published><updated>2020-09-24T18:07:23+09:00</updated><id>http://localhost:4000/jekyll/update/2020/09/24/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/09/24/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+Dashboard&gt;Jenkins관리&gt;보안설정&gt;jenkins global security settings &gt; CSRF Protection &gt; Enable proxy compatibility 체크</p>]]></content><author><name></name></author><summary type="html"><![CDATA[HTTP ERROR 403 No valid crumb was included in the request 에러 해결 Dashboard&gt;Jenkins관리&gt;보안설정&gt;jenkins global security settings &gt; CSRF Protection &gt; Enable proxy compatibility 체크]]></summary></entry></feed>
