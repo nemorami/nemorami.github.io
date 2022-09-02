@@ -22,19 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1c8cee-7a79-40f8-bb68-0d7c3a3649d4" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8b1c8cee-7a79-40f8-bb68-0d7c3a3649d4" name="Default Changelist" comment="users 폴더 디렉토리 이동">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/update/2020/09/24/welcome-to-jekyll.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/jekyll/update/2020/09/24/welcome-to-jekyll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/nemorami.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/nemorami.github.io.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nemorami.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nemorami.github.io.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +275,7 @@
       <workItem from="1651222316866" duration="706000" />
       <workItem from="1660660449750" duration="2087000" />
       <workItem from="1660683161476" duration="721000" />
+      <workItem from="1661255843163" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="_config.yml에 url추가">
       <created>1600941221038</created>
@@ -371,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660660694232</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="users 폴더 디렉토리 이동">
+      <created>1661256137663</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661256137663</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +393,8 @@
     <MESSAGE value="vscode" />
     <MESSAGE value="intellij" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;_posts/2022-04-29-intellij.md&#10;#&#9;_site/2022/04/29/intellij.html&#10;#&#9;_site/feed.xml" />
+    <MESSAGE value="users 폴더 디렉토리 이동" />
+    <option name="LAST_COMMIT_MESSAGE" value="users 폴더 디렉토리 이동" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
