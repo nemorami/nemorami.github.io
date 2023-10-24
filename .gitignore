@@ -3,3 +3,6 @@
 .jekyll-metadata
 .bundle/
 vendor/
+_site/tmp/
+_site/bin/
+/tmp/
