@@ -105,7 +105,7 @@ PLATFORMS
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
-  jekyll (~> 4.3.3)
+  jekyll (~> 4.3.4)
   jekyll-admin
   jekyll-feed (~> 0.12)
   jekyll-theme-simplex (~> 0.9.8.15)

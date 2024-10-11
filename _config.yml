@@ -30,7 +30,8 @@ twitter_username:
 github_username:  nemorami
 
 # Build settings
-theme: jekyll-theme-simplex
+#theme: jekyll-theme-simplex
+theme: Minima
 plugins:
   - jekyll-feed
 
