@@ -4,5 +4,6 @@
 .bundle/
 vendor/
 _site/tmp/
+_site/assets/
 _site/bin/
 /tmp/
