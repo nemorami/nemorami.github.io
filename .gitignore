@@ -6,5 +6,6 @@
 vendor/
 _site/tmp/
 _site/assets/
+_site/assets/fonts
 _site/bin/
 /tmp/

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-16T09:24:49+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">ruby</title><link href="http://localhost:4000/2023/10/24/ruby.html" rel="alternate" type="text/html" title="ruby" /><published>2023-10-24T00:00:00+09:00</published><updated>2023-10-24T00:00:00+09:00</updated><id>http://localhost:4000/2023/10/24/ruby</id><content type="html" xml:base="http://localhost:4000/2023/10/24/ruby.html"><![CDATA[<h2 id="gem-bundle">gem bundle</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-24T12:27:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">영어 단어 공부</title><link href="http://localhost:4000/2024/12/18/.html" rel="alternate" type="text/html" title="영어 단어 공부" /><published>2024-12-18T00:00:00+09:00</published><updated>2024-12-18T00:00:00+09:00</updated><id>http://localhost:4000/2024/12/18/</id><content type="html" xml:base="http://localhost:4000/2024/12/18/.html"><![CDATA[<p>ㅇ</p>]]></content><author><name></name></author><summary type="html"><![CDATA[ㅇ]]></summary></entry><entry><title type="html">ruby</title><link href="http://localhost:4000/2023/10/24/ruby.html" rel="alternate" type="text/html" title="ruby" /><published>2023-10-24T00:00:00+09:00</published><updated>2023-10-24T00:00:00+09:00</updated><id>http://localhost:4000/2023/10/24/ruby</id><content type="html" xml:base="http://localhost:4000/2023/10/24/ruby.html"><![CDATA[<h2 id="gem-bundle">gem bundle</h2>
 <p>ㅇ gem update 시 gem 디렉토리 지정</p>
 <ul>
   <li>BUNDLE_PATH  지정…
@@ -13,7 +13,20 @@
 <p>ㅇ jekyll실행</p>
 <ul>
   <li>bundle exec jekyll s</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[gem bundle ㅇ gem update 시 gem 디렉토리 지정 BUNDLE_PATH 지정… bundle config set –local path .. ? local과 system 구분어떻게 하는지…]]></summary></entry><entry><title type="html">윈도우 c:\Users d 드라이브로 옮기기</title><link href="http://localhost:4000/2022/08/22/c-users-d.html" rel="alternate" type="text/html" title="윈도우 c:\Users d 드라이브로 옮기기" /><published>2022-08-22T00:00:00+09:00</published><updated>2022-08-22T00:00:00+09:00</updated><id>http://localhost:4000/2022/08/22/c-users-d</id><content type="html" xml:base="http://localhost:4000/2022/08/22/c-users-d.html"><![CDATA[<ol>
+</ul>
+
+<h2 id="ruby-command">ruby command</h2>
+<p>ruby -ne ‘print “#{$_.split[0]} “’</p>
+
+<ul>
+  <li>-p n과 비슷하지만 입력을 출력함.</li>
+</ul>
+
+<p>ruby -pe ‘“line: #{S_}”’ &lt; testfile
+line: This is line one
+line: This is line two
+line: This is line three
+line: And so on…</p>]]></content><author><name></name></author><summary type="html"><![CDATA[gem bundle ㅇ gem update 시 gem 디렉토리 지정 BUNDLE_PATH 지정… bundle config set –local path .. ? local과 system 구분어떻게 하는지…]]></summary></entry><entry><title type="html">윈도우 c:\Users d 드라이브로 옮기기</title><link href="http://localhost:4000/2022/08/22/c-users-d.html" rel="alternate" type="text/html" title="윈도우 c:\Users d 드라이브로 옮기기" /><published>2022-08-22T00:00:00+09:00</published><updated>2022-08-22T00:00:00+09:00</updated><id>http://localhost:4000/2022/08/22/c-users-d</id><content type="html" xml:base="http://localhost:4000/2022/08/22/c-users-d.html"><![CDATA[<ol>
   <li>
     <p>윈도우 복구모드윈도우 시작메뉴 &gt; 설정 &gt; 업데이트 및 복구 &gt; 복구 &gt; 고급 시작 옵션 &gt; 다시 시작캡쳐 이미지 자세히 보기(참고용)</p>
   </li>
@@ -52,14 +65,7 @@ D:&gt; robocopy /copyall /E /PURGE /xj Users E:\Users
 <ol>
   <li>재부팅 후 컴퓨터 상태 확인하기D:&gt;exit </li>
   <li>재부팅 후 컴퓨터 환경 확인C:\Users 폴더와 D:\Users 폴더내 내용이 동일하게 보이는 것을 확인할 수 있습니다. ※※ 개인적으로 C:\Users 링크는 숨김 처리하고, C:\사용자 한글폴더를 생성 후 이 폴더 안에 D:\사용자 폴더(실제 : D:\Users) 바로가기를 만들어서 사용합니다.</li>
-</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[윈도우 복구모드윈도우 시작메뉴 &gt; 설정 &gt; 업데이트 및 복구 &gt; 복구 &gt; 고급 시작 옵션 &gt; 다시 시작캡쳐 이미지 자세히 보기(참고용)]]></summary></entry><entry><title type="html">pgadmin docker</title><link href="http://localhost:4000/2022/08/16/pgadmin-docker.html" rel="alternate" type="text/html" title="pgadmin docker" /><published>2022-08-16T00:00:00+09:00</published><updated>2022-08-16T00:00:00+09:00</updated><id>http://localhost:4000/2022/08/16/pgadmin-docker</id><content type="html" xml:base="http://localhost:4000/2022/08/16/pgadmin-docker.html"><![CDATA[<h2 id="pgadmin">pgadmin</h2>
-<p>’’’’
-sudo docker run –name pgadmin -p 5050:80 -v /home/nemorami/devel/pgadmin:/var/lib/pgadmin  -e “PGADMIN_DEFAULT_EMAIL=email@no.com “-e “PGADMIN_DEFAULT_PASSWORD=password” -d dpage/pgadmin4
-‘’’’</p>
-<h2 id="agensgraph">agensgraph</h2>
-<p>’’’’
-docker run -d     –name agensgraph     -e POSTGRES_PASSWORD=agens -p 5400:5432 -v /var/local/agens:/var/lib/postgresql/data docker.io/bitnine/agensgraph 
-‘’’’</p>]]></content><author><name></name></author><summary type="html"><![CDATA[pgadmin ’’’’ sudo docker run –name pgadmin -p 5050:80 -v /home/nemorami/devel/pgadmin:/var/lib/pgadmin -e “PGADMIN_DEFAULT_EMAIL=email@no.com “-e “PGADMIN_DEFAULT_PASSWORD=password” -d dpage/pgadmin4 ‘’’’ agensgraph ’’’’ docker run -d –name agensgraph -e POSTGRES_PASSWORD=agens -p 5400:5432 -v /var/local/agens:/var/lib/postgresql/data docker.io/bitnine/agensgraph ‘’’’]]></summary></entry><entry><title type="html">Intellij</title><link href="http://localhost:4000/2022/04/29/intellij.html" rel="alternate" type="text/html" title="Intellij" /><published>2022-04-29T00:00:00+09:00</published><updated>2022-04-29T00:00:00+09:00</updated><id>http://localhost:4000/2022/04/29/intellij</id><content type="html" xml:base="http://localhost:4000/2022/04/29/intellij.html"><![CDATA[<p>DevTools는 코드가 변경될 때 자동으로 애플리케이션을 다시 시작시킨다. 즉, 소스를 변경할때 마다 프로젝트를 중지시키고 다시 시작 시킬 필요가 없다는 뜻이다.</p>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[윈도우 복구모드윈도우 시작메뉴 &gt; 설정 &gt; 업데이트 및 복구 &gt; 복구 &gt; 고급 시작 옵션 &gt; 다시 시작캡쳐 이미지 자세히 보기(참고용)]]></summary></entry><entry><title type="html">Intellij</title><link href="http://localhost:4000/2022/04/29/intellij.html" rel="alternate" type="text/html" title="Intellij" /><published>2022-04-29T00:00:00+09:00</published><updated>2022-04-29T00:00:00+09:00</updated><id>http://localhost:4000/2022/04/29/intellij</id><content type="html" xml:base="http://localhost:4000/2022/04/29/intellij.html"><![CDATA[<p>DevTools는 코드가 변경될 때 자동으로 애플리케이션을 다시 시작시킨다. 즉, 소스를 변경할때 마다 프로젝트를 중지시키고 다시 시작 시킬 필요가 없다는 뜻이다.</p>
 
 <p>인텔리제이(IntelliJ) 에서 사용방법</p>
 
@@ -129,7 +135,50 @@ start-default-seat=false
 </code></pre></div></div>
 <p>Then restart the LightDM:</p>
 
-<p>systemctl restart lightdm</p>]]></content><author><name></name></author><summary type="html"><![CDATA[vnc 설정 /etc/systemd/system/xvnc.socket]]></summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/2020/11/10/docker.html" rel="alternate" type="text/html" title="Docker" /><published>2020-11-10T00:00:00+09:00</published><updated>2020-11-10T00:00:00+09:00</updated><id>http://localhost:4000/2020/11/10/docker</id><content type="html" xml:base="http://localhost:4000/2020/11/10/docker.html"><![CDATA[<p><code class="language-plaintext highlighter-rouge">docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd</code></p>]]></content><author><name></name></author><summary type="html"><![CDATA[docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd]]></summary></entry><entry><title type="html">LINUX TIP</title><link href="http://localhost:4000/2020/10/07/linux-tip.html" rel="alternate" type="text/html" title="LINUX TIP" /><published>2020-10-07T00:00:00+09:00</published><updated>2020-10-07T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/07/linux-tip</id><content type="html" xml:base="http://localhost:4000/2020/10/07/linux-tip.html"><![CDATA[<h1 id="wine-hwp-file-open">wine hwp file open</h1>
+<p>systemctl restart lightdm</p>]]></content><author><name></name></author><summary type="html"><![CDATA[vnc 설정 /etc/systemd/system/xvnc.socket]]></summary></entry><entry><title type="html">Docker</title><link href="http://localhost:4000/2020/11/10/docker.html" rel="alternate" type="text/html" title="Docker" /><published>2020-11-10T00:00:00+09:00</published><updated>2020-11-10T00:00:00+09:00</updated><id>http://localhost:4000/2020/11/10/docker</id><content type="html" xml:base="http://localhost:4000/2020/11/10/docker.html"><![CDATA[<p><code class="language-plaintext highlighter-rouge">docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd</code></p>
+
+<h2 id="redmine">redmine</h2>
+<p>docker run -d –name redmine  -v /pub/home/nemorami/podman/redmine/files:/usr/src/redmine/files -e REDMINE_DB_POSTGRES=10.132.46.105 -e REDMINE_DB_PORT=5432 -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=redmine docker.io/redmine</p>
+<h2 id="pgadmin">pgadmin</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run --name pgadmin -p 5050:80 -v /home/nemorami/devel/pgadmin:/var/lib/pgadmin  -e "PGADMIN_DEFAULT_EMAIL=email@no.com "-e "PGADMIN_DEFAULT_PASSWORD=password" -d dpage/pgadmin4
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--name</span> pgadmin <span class="nt">-p</span> 5050:80 <span class="nt">-v</span> /pub/home/nemorami/podman/pgadmin4/lib:/var/lib/pgadmin <span class="nt">-e</span> <span class="s2">"PGADMIN_DEFAULT_EMAIL=nemorami@customs.go.kr"</span> <span class="nt">-e</span> <span class="s2">"PGADMIN_DEFAULT_PASSWORD=j5nfants"</span> <span class="nt">-d</span> docker.io/dpage/pgadmin4
+</code></pre></div></div>
+<h2 id="agensgraph">agensgraph</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d     --name agensgraph     -e POSTGRES_PASSWORD=agens -p 5400:5432 -v /var/local/agens:/var/lib/postgresql/data docker.io/bitnine/agensgraph 
+</code></pre></div></div>
+
+<h2 id="pgadmin-1">pgadmin</h2>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3'</span>
+    <span class="na">services</span><span class="pi">:</span>
+
+    <span class="na">postgres</span><span class="pi">:</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">postgres:${SOFTWARE_VERSION_TAG}</span>
+        <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+        <span class="c1">#command: -c ssl=on -c ssl_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem -c ssl_key_file=/etc/ssl/private/ssl-cert-snakeoil.key</span>
+        <span class="na">environment</span><span class="pi">:</span>
+        <span class="na">POSTGRES_DB</span><span class="pi">:</span> <span class="s">postgres</span>
+        <span class="na">POSTGRES_USER</span><span class="pi">:</span> <span class="s">postgres</span>
+        <span class="na">POSTGRES_PASSWORD</span><span class="pi">:</span> <span class="s">${SOFTWARE_PASSWORD}</span>
+        <span class="na">PGDATA</span><span class="pi">:</span> <span class="s">/var/lib/postgresql/data</span>
+        <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">./data:/var/lib/postgresql/data</span>
+        <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s1">'</span><span class="s">172.17.0.1:5432:5432'</span>
+
+    <span class="na">pgadmin4</span><span class="pi">:</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">elestio/pgadmin:${SOFTWARE_VERSION_TAG}</span>
+        <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+        <span class="na">environment</span><span class="pi">:</span>
+        <span class="na">PGADMIN_DEFAULT_EMAIL</span><span class="pi">:</span> <span class="s">${ADMIN_EMAIL}</span>
+        <span class="na">PGADMIN_DEFAULT_PASSWORD</span><span class="pi">:</span> <span class="s">${ADMIN_PASSWORD}</span>
+        <span class="na">PGADMIN_LISTEN_PORT</span><span class="pi">:</span> <span class="m">8080</span>
+        <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s2">"</span><span class="s">172.17.0.1:8080:8080"</span>
+        <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">./servers.json:/pgadmin4/servers.json</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd]]></summary></entry><entry><title type="html">LINUX TIP</title><link href="http://localhost:4000/2020/10/07/linux-tip.html" rel="alternate" type="text/html" title="LINUX TIP" /><published>2020-10-07T00:00:00+09:00</published><updated>2020-10-07T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/07/linux-tip</id><content type="html" xml:base="http://localhost:4000/2020/10/07/linux-tip.html"><![CDATA[<h1 id="wine-hwp-file-open">wine hwp file open</h1>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
 Name=한컴오피스 한글 2014
 Exec=env WINEPREFIX="/home/nemorami/.wine32" wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f
@@ -175,7 +224,10 @@ Exec=/opt/hnchoffice11/Bin/hwp <strong>-style=Fusion</strong> %f</li>
 <ol>
   <li>kio-gdrive rebuild
 <code class="language-plaintext highlighter-rouge">pikaur -G kio-gdrive</code></li>
-</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[wine hwp file open [Desktop Entry] Name=한컴오피스 한글 2014 Exec=env WINEPREFIX="/home/nemorami/.wine32" wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f Type=Application StartupNotify=true Comment=한글 2014(으)로 빠르고 편리하게 워드프로세서 문서를 만듭니다. Path=/home/nemorami/.wine32/dosdevices/c:/Program Files/Hnc/HOffice9/Bin/ Icon=BE08_Hwp.0 StartupWMClass=hwp.exe linux용 한글 2020 dpkg -i –force-all han…. 입력기가 붙지 않을때: /opt/hnc/hoffice11/Bin/qt 디렉토리 삭제 color-scheme 적용: /usr/share/color-schemes/ 아래 원하는 칼라 스키마 파일을 ~/.config/hwprc 파일로 복사 style적용: /usr/share/applications/hoffice11-hwp.desktop 편집 Exec=/opt/hnchoffice11/Bin/hwp -style=Fusion %f 현재 OS를 docker image로 만들기 현재 OS를 tar 파일로 묶음]]></summary></entry><entry><title type="html">Qt 개발환경</title><link href="http://localhost:4000/2020/10/04/qt.html" rel="alternate" type="text/html" title="Qt 개발환경" /><published>2020-10-04T00:00:00+09:00</published><updated>2020-10-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/04/qt</id><content type="html" xml:base="http://localhost:4000/2020/10/04/qt.html"><![CDATA[<h1 id="for-unix-socket">for unix socket</h1>
+</ol>
+
+<h1 id="avidemux">avidemux</h1>
+<p>ㅇ wayland에서 화면 깨짐 =&gt; X11에서 실행 -platform xcb</p>]]></content><author><name></name></author><summary type="html"><![CDATA[wine hwp file open [Desktop Entry] Name=한컴오피스 한글 2014 Exec=env WINEPREFIX="/home/nemorami/.wine32" wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f Type=Application StartupNotify=true Comment=한글 2014(으)로 빠르고 편리하게 워드프로세서 문서를 만듭니다. Path=/home/nemorami/.wine32/dosdevices/c:/Program Files/Hnc/HOffice9/Bin/ Icon=BE08_Hwp.0 StartupWMClass=hwp.exe linux용 한글 2020 dpkg -i –force-all han…. 입력기가 붙지 않을때: /opt/hnc/hoffice11/Bin/qt 디렉토리 삭제 color-scheme 적용: /usr/share/color-schemes/ 아래 원하는 칼라 스키마 파일을 ~/.config/hwprc 파일로 복사 style적용: /usr/share/applications/hoffice11-hwp.desktop 편집 Exec=/opt/hnchoffice11/Bin/hwp -style=Fusion %f 현재 OS를 docker image로 만들기 현재 OS를 tar 파일로 묶음]]></summary></entry><entry><title type="html">Qt 개발환경</title><link href="http://localhost:4000/2020/10/04/qt.html" rel="alternate" type="text/html" title="Qt 개발환경" /><published>2020-10-04T00:00:00+09:00</published><updated>2020-10-04T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/04/qt</id><content type="html" xml:base="http://localhost:4000/2020/10/04/qt.html"><![CDATA[<h1 id="for-unix-socket">for unix socket</h1>
 <p>nc -lkU ~/.assistantfifo | assistant -enableRemoteControl</p>
 <h1 id="tcp-socket">tcp socket</h1>
 <p>nc -lp 8080| assistant -enableRemoteControl</p>

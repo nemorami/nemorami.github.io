@@ -1,1 +1,44 @@
 <p><code class="language-plaintext highlighter-rouge">docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd</code></p>
+
+<h2 id="redmine">redmine</h2>
+<p>docker run -d –name redmine  -v /pub/home/nemorami/podman/redmine/files:/usr/src/redmine/files -e REDMINE_DB_POSTGRES=10.132.46.105 -e REDMINE_DB_PORT=5432 -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=redmine docker.io/redmine</p>
+<h2 id="pgadmin">pgadmin</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run --name pgadmin -p 5050:80 -v /home/nemorami/devel/pgadmin:/var/lib/pgadmin  -e "PGADMIN_DEFAULT_EMAIL=email@no.com "-e "PGADMIN_DEFAULT_PASSWORD=password" -d dpage/pgadmin4
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--name</span> pgadmin <span class="nt">-p</span> 5050:80 <span class="nt">-v</span> /pub/home/nemorami/podman/pgadmin4/lib:/var/lib/pgadmin <span class="nt">-e</span> <span class="s2">"PGADMIN_DEFAULT_EMAIL=nemorami@customs.go.kr"</span> <span class="nt">-e</span> <span class="s2">"PGADMIN_DEFAULT_PASSWORD=j5nfants"</span> <span class="nt">-d</span> docker.io/dpage/pgadmin4
+</code></pre></div></div>
+<h2 id="agensgraph">agensgraph</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d     --name agensgraph     -e POSTGRES_PASSWORD=agens -p 5400:5432 -v /var/local/agens:/var/lib/postgresql/data docker.io/bitnine/agensgraph 
+</code></pre></div></div>
+
+<h2 id="pgadmin-1">pgadmin</h2>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3'</span>
+    <span class="na">services</span><span class="pi">:</span>
+
+    <span class="na">postgres</span><span class="pi">:</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">postgres:${SOFTWARE_VERSION_TAG}</span>
+        <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+        <span class="c1">#command: -c ssl=on -c ssl_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem -c ssl_key_file=/etc/ssl/private/ssl-cert-snakeoil.key</span>
+        <span class="na">environment</span><span class="pi">:</span>
+        <span class="na">POSTGRES_DB</span><span class="pi">:</span> <span class="s">postgres</span>
+        <span class="na">POSTGRES_USER</span><span class="pi">:</span> <span class="s">postgres</span>
+        <span class="na">POSTGRES_PASSWORD</span><span class="pi">:</span> <span class="s">${SOFTWARE_PASSWORD}</span>
+        <span class="na">PGDATA</span><span class="pi">:</span> <span class="s">/var/lib/postgresql/data</span>
+        <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">./data:/var/lib/postgresql/data</span>
+        <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s1">'</span><span class="s">172.17.0.1:5432:5432'</span>
+
+    <span class="na">pgadmin4</span><span class="pi">:</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">elestio/pgadmin:${SOFTWARE_VERSION_TAG}</span>
+        <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+        <span class="na">environment</span><span class="pi">:</span>
+        <span class="na">PGADMIN_DEFAULT_EMAIL</span><span class="pi">:</span> <span class="s">${ADMIN_EMAIL}</span>
+        <span class="na">PGADMIN_DEFAULT_PASSWORD</span><span class="pi">:</span> <span class="s">${ADMIN_PASSWORD}</span>
+        <span class="na">PGADMIN_LISTEN_PORT</span><span class="pi">:</span> <span class="m">8080</span>
+        <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s2">"</span><span class="s">172.17.0.1:8080:8080"</span>
+        <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">./servers.json:/pgadmin4/servers.json</span>
+</code></pre></div></div>
