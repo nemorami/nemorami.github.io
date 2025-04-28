@@ -1,11 +1,10 @@
-.sass-cache/
-.jekyll-cache/
-.jekyll-cache/Jekyll/
-.jekyll-metadata
-.bundle/
-vendor/
-_site/tmp/
-_site/assets/
-_site/assets/fonts
-_site/bin/
-/tmp/
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/_site/assets/
+/.jekyll-cache/
