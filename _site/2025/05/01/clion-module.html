@@ -1,0 +1,45 @@
+<p>A complete working example</p>
+
+<p>You can try this example in Compiler Explorer and find it on Github.</p>
+
+<p>// a.cppm</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span><span class="p">;</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span>
+<span class="k">export</span> <span class="k">module</span> <span class="n">MyModule</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">hidden</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">42</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="kt">void</span> <span class="nf">printMessage</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"The hidden value is "</span> <span class="o">&lt;&lt;</span> <span class="n">hidden</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// main.cpp</span>
+<span class="k">import</span> <span class="n">MyModule</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printMessage</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="cp"># CMakeLists.txt
+</span><span class="n">cmake_minimum_required</span><span class="p">(</span><span class="n">VERSION</span> <span class="mf">3.28</span><span class="p">)</span>
+
+<span class="n">project</span><span class="p">(</span><span class="n">modules</span><span class="o">-</span><span class="n">example</span><span class="p">)</span>
+
+<span class="n">set</span><span class="p">(</span><span class="n">CMAKE_CXX_STANDARD</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="n">add_executable</span><span class="p">(</span><span class="n">demo</span><span class="p">)</span>
+<span class="n">target_sources</span><span class="p">(</span><span class="n">demo</span>
+    <span class="n">PUBLIC</span>
+    <span class="n">main</span><span class="p">.</span><span class="n">cpp</span>
+<span class="p">)</span>
+<span class="n">target_sources</span><span class="p">(</span><span class="n">demo</span>
+  <span class="n">PUBLIC</span>
+    <span class="n">FILE_SET</span> <span class="n">all_my_modules</span> <span class="n">TYPE</span> <span class="n">CXX_MODULES</span> <span class="n">FILES</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">cppm</span>
+<span class="p">)</span>
+</code></pre></div></div>
