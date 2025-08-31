@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-02T08:48:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">clion module</title><link href="http://localhost:4000/2025/05/01/clion-module.html" rel="alternate" type="text/html" title="clion module" /><published>2025-05-01T00:00:00+09:00</published><updated>2025-05-01T00:00:00+09:00</updated><id>http://localhost:4000/2025/05/01/clion-module</id><content type="html" xml:base="http://localhost:4000/2025/05/01/clion-module.html"><![CDATA[<p>A complete working example</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-31T11:06:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">NEMORAMI</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Windows 정품인증</title><link href="http://localhost:4000/2025/08/31/windows.html" rel="alternate" type="text/html" title="Windows 정품인증" /><published>2025-08-31T00:00:00+09:00</published><updated>2025-08-31T00:00:00+09:00</updated><id>http://localhost:4000/2025/08/31/windows</id><content type="html" xml:base="http://localhost:4000/2025/08/31/windows.html"><![CDATA[<h1 id="1단계-명령-프롬프트-실행-관리자-권한">1단계: 명령 프롬프트 실행 (관리자 권한)</h1>
+<p>작업표시줄의 돋보기 아이콘(검색) 클릭
+검색창에 cmd 입력
+명령 프롬프트 항목에 마우스 우클릭 → 관리자 권한으로 실행</p>
+
+<h1 id="2단계-윈도우11-kms-제품키-입력">2단계: 윈도우11 KMS 제품키 입력</h1>
+<p>명령어 창에 아래 형식으로 명령어를 입력합니다:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
+</code></pre></div></div>
+<p>예를 들어 제가 설치한 Windows 11 Home 버전이라면 아래와 같이 입력합니다:</p>
+
+<p>만약 다른 버전이라면 아래 표를 참고하세요:</p>
+
+<p>윈도우11 에디션	KMS 제품키
+Windows 11 Pro	W269N-WFGWX-YVC9B-4J6C9-T83GX
+Windows 11 Home	TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
+Windows 11 Enterprise	NPPR9-FWDCX-D2C8J-H872K-2YT43</p>
+<h1 id="3단계-kms-서버-설정">3단계: KMS 서버 설정</h1>
+<p>KMS 서버에 연결하기 위해 아래 명령어를 입력합니다:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>slmgr /skms kms8.msguides.com
+</code></pre></div></div>
+<h1 id="4단계-정품-인증-명령-실행">4단계: 정품 인증 명령 실행</h1>
+<p>KMS 서버 설정까지 마쳤다면 이제 정품 인증을 시작합니다:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>slmgr /ato
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[1단계: 명령 프롬프트 실행 (관리자 권한) 작업표시줄의 돋보기 아이콘(검색) 클릭 검색창에 cmd 입력 명령 프롬프트 항목에 마우스 우클릭 → 관리자 권한으로 실행]]></summary></entry><entry><title type="html">clion module</title><link href="http://localhost:4000/2025/05/01/clion-module.html" rel="alternate" type="text/html" title="clion module" /><published>2025-05-01T00:00:00+09:00</published><updated>2025-05-01T00:00:00+09:00</updated><id>http://localhost:4000/2025/05/01/clion-module</id><content type="html" xml:base="http://localhost:4000/2025/05/01/clion-module.html"><![CDATA[<p>A complete working example</p>
 
 <p>You can try this example in Compiler Explorer and find it on Github.</p>
 
@@ -222,53 +248,4 @@ start-default-seat=false
         <span class="pi">-</span> <span class="s2">"</span><span class="s">172.17.0.1:8080:8080"</span>
         <span class="na">volumes</span><span class="pi">:</span>
         <span class="pi">-</span> <span class="s">./servers.json:/pgadmin4/servers.json</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd]]></summary></entry><entry><title type="html">LINUX TIP</title><link href="http://localhost:4000/2020/10/07/linux-tip.html" rel="alternate" type="text/html" title="LINUX TIP" /><published>2020-10-07T00:00:00+09:00</published><updated>2020-10-07T00:00:00+09:00</updated><id>http://localhost:4000/2020/10/07/linux-tip</id><content type="html" xml:base="http://localhost:4000/2020/10/07/linux-tip.html"><![CDATA[<h1 id="wine-hwp-file-open">wine hwp file open</h1>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
-Name=한컴오피스 한글 2014
-Exec=env WINEPREFIX="/home/nemorami/.wine32" wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f
-Type=Application
-StartupNotify=true
-Comment=한글 2014(으)로 빠르고 편리하게 워드프로세서 문서를 만듭니다.
-Path=/home/nemorami/.wine32/dosdevices/c:/Program Files/Hnc/HOffice9/Bin/
-Icon=BE08_Hwp.0
-StartupWMClass=hwp.exe
-</code></pre></div></div>
-<h1 id="linux용-한글-2020">linux용 한글 2020</h1>
-<ul>
-  <li>dpkg -i –force-all han….</li>
-  <li>입력기가 붙지 않을때: /opt/hnc/hoffice11/Bin/qt 디렉토리 삭제</li>
-  <li>color-scheme 적용: /usr/share/color-schemes/ 아래 원하는 칼라 스키마 파일을 ~/.config/hwprc 파일로 복사</li>
-  <li>style적용: /usr/share/applications/hoffice11-hwp.desktop 편집
-Exec=/opt/hnchoffice11/Bin/hwp <strong>-style=Fusion</strong> %f</li>
-</ul>
-
-<h1 id="현재-os를-docker-image로-만들기">현재 OS를 docker image로 만들기</h1>
-<ol>
-  <li>현재 OS를 tar 파일로 묶음</li>
-</ol>
-
-<p><code class="language-plaintext highlighter-rouge">tar --numeric-owner --exclude=/proc --exclude=/sys -cvf centos6-base.tar(이름 지정) / </code></p>
-
-<p>` tar -cpzf backup.tar.gz –exclude=/backup.tar.gz –exclude=/proc –exclude=/tmp –exclude=/mnt –exclude=/dev –exclude=/sys /`</p>
-<ol>
-  <li>docker 서버로 tar 파일을 복사 후 docker에 import</li>
-</ol>
-
-<p><code class="language-plaintext highlighter-rouge">cat centos6-base.tar | docker import - centos6-base(원하는 이미지 이름)</code></p>
-
-<ol>
-  <li>import 정상 확인</li>
-</ol>
-
-<p><code class="language-plaintext highlighter-rouge">docker run -i -t centos6-base cat /etc/redhat-release </code>
- <code class="language-plaintext highlighter-rouge">$ cat backup.tar.gz | docker import - imageName:20190825</code>
-<code class="language-plaintext highlighter-rouge">$ docker run -t -i imageName:20190825 /bin/bash</code></p>
-
-<h1 id="kio-gdrive">kio-gdrive</h1>
-<ol>
-  <li>kio-gdrive rebuild
-<code class="language-plaintext highlighter-rouge">pikaur -G kio-gdrive</code></li>
-</ol>
-
-<h1 id="avidemux">avidemux</h1>
-<p>ㅇ wayland에서 화면 깨짐 =&gt; X11에서 실행 -platform xcb</p>]]></content><author><name></name></author><summary type="html"><![CDATA[wine hwp file open [Desktop Entry] Name=한컴오피스 한글 2014 Exec=env WINEPREFIX="/home/nemorami/.wine32" wine C:\\\\Program\\ Files\\\\Hnc\\\\HOffice9\\\\Bin\\\\Hwp.exe z:%f Type=Application StartupNotify=true Comment=한글 2014(으)로 빠르고 편리하게 워드프로세서 문서를 만듭니다. Path=/home/nemorami/.wine32/dosdevices/c:/Program Files/Hnc/HOffice9/Bin/ Icon=BE08_Hwp.0 StartupWMClass=hwp.exe linux용 한글 2020 dpkg -i –force-all han…. 입력기가 붙지 않을때: /opt/hnc/hoffice11/Bin/qt 디렉토리 삭제 color-scheme 적용: /usr/share/color-schemes/ 아래 원하는 칼라 스키마 파일을 ~/.config/hwprc 파일로 복사 style적용: /usr/share/applications/hoffice11-hwp.desktop 편집 Exec=/opt/hnchoffice11/Bin/hwp -style=Fusion %f 현재 OS를 docker image로 만들기 현재 OS를 tar 파일로 묶음]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[docker run -d -it --cap-add SYS_ADMIN --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6080:6080 gooroom /lib/systemd/systemd]]></summary></entry></feed>
